@@ -1,0 +1,47 @@
+{
+    "name": "i9w3b/novo-pacote",
+    "description": "Notificações para Laravel",
+    "keywords": [
+        "i9w3b",
+        "novo-pacote"
+    ],
+    "homepage": "https://github.com/i9w3b/novo-pacote",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Marcelo Sena",
+            "email": "marcelosenaonline@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "laravel/framework": "^7.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "I9w3b\\NovoPacote\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "I9w3b\\NovoPacote\\NovoPacoteServiceProvider"
+            ],
+            "aliases": {
+                "NovoPacote": "I9w3b\\NovoPacote\\NovoPacoteFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {}
+}
